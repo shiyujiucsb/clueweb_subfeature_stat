@@ -1,7 +1,7 @@
-#echo "Extracting combined features..."
+#echo "Extracting subfeatures..."
 
 cat $1 | awk -F ' ' '{
-  fn = 1;
+  fn = 0;
   for (i=1; i<=NF; i++){
     if (match($i, "_")){
       split($i, f, ":");
