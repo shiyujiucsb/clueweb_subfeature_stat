@@ -3,7 +3,7 @@ bash tr_inf_nan.sh $1 > no_inf_nan_results09mq.txt
 bash extract_combined_features.sh no_inf_nan_results09mq.txt > all_combined_features.txt
 bash padding.sh all_combined_features.txt 36 > padded_all_combined_features.txt
 bash shuf.sh padded_all_combined_features.txt
-python divide.py qid_length.txt no_inf_nan_results09mq.txt
+python divide.py $2 no_inf_nan_results09mq.txt
 
 for i in 2 3 4
 do
