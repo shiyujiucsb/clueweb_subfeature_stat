@@ -1,4 +1,4 @@
-for f in MAP_*
+for f in $1*
 do 
   echo $f
   tail $f
